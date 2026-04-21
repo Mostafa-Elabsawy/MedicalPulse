@@ -19,6 +19,7 @@ export const routes: Routes = [
     path: 'patient-dashboard',
     component: PatientDashboard,
     children: [
+      {path: '', redirectTo: 'Patient-Info', pathMatch: 'full'},
       {
         path: 'Patient-Info',
         component: PatientInfo,
