@@ -1,0 +1,41 @@
+
+
+<section class="flex h-screen overflow-hidden">
+    <div class="fixed inset-0 bg-black/50 z-10 lg:hidden transition-opacity duration-300" [class.opacity-0]="!menu()" [class.pointer-events-none]="!menu()" (click)="toggle()"></div>
+    <aside class="fixed lg:sticky top-0 left-0 z-20 h-full lg:h-screen w-60 bg-primary-50 px-4 py-3 rounded-se-2xl rounded-ee-2xl transform transition-transform duration-300 lg:translate-x-0" [class.-translate-x-full]="!menu()" [class.translate-x-0]="menu()">
+        <section class="flex flex-col justify-between h-full">
+            <div class="flex items-center gap-2.5 border-b py-4 border-black/30 mb-3">
+                <div class="bg-primary-600 p-2 aspect-square flex items-center justify-center rounded-xl"><i class="fa-solid fa-heart-pulse text-white fa-xl"></i></div>
+                <div class="flex flex-col justify-center items-start">
+                    <p class="font-bold text-xl leading-5 text-primary-600">Medical Pulse</p>
+                    <p class="text-gray-600">Patient Portal</p>
+                </div>
+            </div>
+            <nav class="flex flex-col gap-0.5">
+                <div class="nav-item" routerLink="Patient-Info" routerLinkActive="active"><i class="fa-solid fa-user text-sm"></i><span class="text-sm font-medium nav-label">Personal Info</span></div>
+                <div class="nav-item" routerLink="Lab-Results" routerLinkActive="active"><i class="fa-solid fa-flask text-sm"></i><span class="text-sm font-medium nav-label">Lab Results</span></div>
+                <div class="nav-item" routerLink="Radiology-Reports" routerLinkActive="active"><i class="fa-solid fa-x-ray text-sm"></i><span class="text-sm font-medium nav-label">Radiology</span></div>
+                <div class="nav-item" routerLink="Appointments" routerLinkActive="active"><i class="fa-solid fa-calendar-days text-sm"></i><span class="text-sm font-medium nav-label">Appointments</span></div>
+                <div class="nav-item" routerLink="Visits" routerLinkActive="active"><i class="fa-solid fa-house-medical text-sm"></i><span class="text-sm font-medium nav-label">Visits</span></div>
+            </nav>
+            <div class="mt-auto pt-4 px-4 border-t border-white/6">
+                <div class="flex items-center gap-2.5 px-2 py-2.5"><img src="https://i.pravatar.cc/80?img=11" class="w-[38px] h-[38px] rounded-full object-cover border-2 border-blue-600 shrink-0" />
+                    <div class="overflow-hidden">
+                        <div class="text-[0.8rem] font-semibold text-white truncate max-w-[130px]">—</div>
+                        <div class="text-[0.68rem] text-blue-300 mt-0.5">—</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+    <main class="flex-1 bg-primary-200 overflow-auto">
+        <header class="sticky top-0 bg-primary-50 z-10 py-6 px-4 flex items-center rounded-ee-lg rounded-es-lg  gap-2"><button (click)="toggle()" class="lg:hidden"><i class="fa fa-bars text-2xl text-primary-500"></i></button>
+            <h1 class="text-lg font-semibold text-gray-600">Patient Portal</h1>
+        </header>
+        <div class="xl:container ">
+            <!-- <app-patient-info></app-patient-info> -->
+            <!-- <app-lab-results></app-lab-results> -->
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+</section>

@@ -1,0 +1,65 @@
+<div class="space-y-3 animate-fade-in p-4">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between bg-white px-4 rounded-xl">
+        <div class="p-5 rounded-2xl">
+
+            <div>
+                <h2 class="text-2xl font-bold text-black ">
+                    Lab Results
+                </h2>
+
+                <p class="text-gray-500 text-sm mt-1">
+                    Download or view your laboratory reports
+                </p>
+            </div>
+
+        </div>
+
+        <div class="flex items-center gap-2 text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-lg">
+            <i class="pi pi-file text-xs"></i>
+            {{ labReports.length }} reports
+        </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-5">
+        <!-- <div class="col"></div> -->
+        @for (item of labReports; track $index) {
+        <div class="col">
+
+            <div class="flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 p-4 border border-gray-100">
+
+                <!-- PDF Icon -->
+                <div class="w-full h-32 rounded-xl bg-red-50 flex items-center justify-center mb-4">
+                    <i class="fa fa-file-lines  text-red-400 text-6xl!"></i>
+                </div>
+
+                <!-- Content -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-gray-800 mb-1">
+                        {{ item.title }}
+                    </h3>
+
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                        <i class="pi pi-calendar text-xs"></i>
+                        <span>{{ item.date }}</span>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex gap-2 justify-between">
+
+                    <p-button type="button" severity="secondary" label="Ai Scan" icon="pi pi-eye">
+                    </p-button>
+
+                    <p-button type="button" severity="secondary" label="Download" icon="pi pi-download">
+                    </p-button>
+
+                </div>
+            </div>
+        </div>
+        }
+
+    </div>
+</div>
