@@ -1,0 +1,412 @@
+<div class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-2xl border-b  border-slate-100">
+        <div class="container mx-auto">
+
+        <div class=" mx-auto x-4p sm:px-6">
+
+            <div class="py-4 flex items-center justify-between">
+
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm">
+                        <i class="fa-solid fa-heart-pulse text-white text-2xl"></i>
+                    </div>
+
+                    <div class="leading-tight">
+                        <p class="text-lg font-semibold text-slate-900">Medical Pulse</p>
+                        <p class="text-md text-slate-500 hidden sm:block">Patient Health Platform</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Links -->
+                <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-500">
+                    <a class="nav-link active">Home</a>
+                    <a class="nav-link">About</a>
+                    <a class="nav-link">Services</a>
+                    <a class="nav-link">Team</a>
+                    <a class="nav-link">Contact</a>
+                </div>
+
+                <!-- CTA (desktop) -->
+                 <div class="flex gap-4 hidden lg:flex">
+
+                     <a pButton severity="primary">
+                         Login
+                        </a>
+                     <a pButton severity="secondary">
+                         Sign Up
+                        </a>
+                    </div>
+
+                <!-- Mobile Button -->
+
+                <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="lg:hidden p-2 rounded-xl hover:bg-slate-100 transition">
+                    <i class="fa fa-bars text-xl text-gray-600"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="lg:hidden container overflow-hidden border-t border-slate-100 ">
+
+            <div class="px-4 py-3 flex flex-col items-start gap-3 text-sm text-slate-600">
+
+                <a class="nav-link active">Home</a>
+                <a class="nav-link">About</a>
+                <a class="nav-link">Services</a>
+                <a class="nav-link">Team</a>
+                <a class="nav-link">Contact</a>
+
+                <a class="self-stretch mt-2 px-4 py-2 rounded-xl bg-blue-600 text-white text-center">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="relative border-0 border-red-500 overflow-hidden">
+        <div class="relative container mx-auto px-4 sm:px-6 py-13 grid md:grid-cols-2 gap-14 items-center">
+            <!-- LEFT -->
+            <div class="space-y-7">
+
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-medium border border-blue-100">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                    Trusted Healthcare System
+                </div>
+
+                <h1 class="text-5xl font-semibold leading-tight text-slate-900">
+                    Your Health,<br />
+                    <span class="text-blue-600">Connected & Simple.</span>
+                </h1>
+
+                <p class="text-slate-500 max-w-md leading-relaxed">
+                    Manage your medical records, lab results, radiology reports, and appointments in one secure unified healthcare platform.
+                </p>
+
+                <div class="flex gap-3">
+                    <a class="px-5 py-3 rounded-2xl bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 hover:-translate-y-0.5 transition shadow-sm">
+                        Get Started
+                    </a>
+
+                    <a class="px-5 py-3 rounded-2xl border border-slate-200 text-slate-700 text-sm hover:bg-white hover:shadow-sm transition">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- trust -->
+                <div class="flex items-center gap-3 pt-3">
+                    <div class="flex -space-x-2">
+                        <img class="w-8 h-8 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/44.jpg">
+                        <img class="w-8 h-8 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/32.jpg">
+                        <img class="w-8 h-8 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/68.jpg">
+                    </div>
+                    <p class="text-xs text-slate-500"><span class="font-semibold text-slate-700">4.9/5</span> patient satisfaction</p>
+                </div>
+
+            </div>
+
+<!-- RIGHT DASHBOARD CARD (REPLACED WITH VISIT SNAPSHOT) -->
+<div class="bg-white/70 backdrop-blur-2xl border border-slate-100 rounded-3xl shadow-xl p-6">
+
+    <!-- Header -->
+    <div class="flex justify-between mb-5">
+        <p class="text-sm font-semibold text-slate-800">Latest Medical Activity</p>
+        <p class="text-xs text-slate-400">Live System</p>
+    </div>
+
+    <!-- Timeline Dot Style Header -->
+    <div class="relative pl-6">
+
+        <!-- timeline dot -->
+        <div class="absolute -left-[6px] top-2 w-3 h-3 bg-purple-500 rounded-full border-2 border-white shadow"></div>
+
+        <!-- Card -->
+        <div class="bg-white/70 backdrop-blur rounded-2xl shadow-sm hover:shadow-md transition-all p-4 border border-gray-100">
+
+            <!-- Top -->
+            <div class="flex justify-between items-start">
+                <div>
+                    <h2 class="font-semibold text-sm text-gray-800">Al Hayat Lab</h2>
+                    <p class="text-xs text-gray-500">Diagnostics • CBC Analysis</p>
+                </div>
+
+                <span class="text-[10px] px-2 py-1 bg-yellow-100 text-yellow-700 rounded-full font-medium">
+                    Completed
+                </span>
+            </div>
+
+            <!-- Grid Info -->
+            <div class="mt-3 grid grid-cols-2 gap-2 text-xs">
+
+                <div class="bg-gray-50 p-2 rounded-lg">
+                    <p class="text-gray-400">Service</p>
+                    <p class="font-medium">Laboratory</p>
+                </div>
+
+                <div class="bg-gray-50 p-2 rounded-lg">
+                    <p class="text-gray-400">Test</p>
+                    <p class="font-medium">CBC Blood</p>
+                </div>
+
+                <div class="bg-gray-50 p-2 rounded-lg">
+                    <p class="text-gray-400">Date</p>
+                    <p class="font-medium">20 Apr 2026</p>
+                </div>
+
+                <div class="bg-gray-50 p-2 rounded-lg">
+                    <p class="text-gray-400">Time</p>
+                    <p class="font-medium">09:00 AM</p>
+                </div>
+
+            </div>
+
+            <!-- AI Notes -->
+            <div class="mt-3 p-3 rounded-xl bg-purple-50 border border-purple-100">
+                <p class="font-semibold text-purple-700 text-xs mb-1">AI Insight</p>
+                <p class="text-xs text-gray-700">
+                    White blood cells slightly elevated, no critical issues detected.
+                </p>
+            </div>
+
+            <!-- Details -->
+            <div class="mt-2 p-3 rounded-xl bg-gray-50 border">
+                <p class="font-semibold text-xs mb-1">System Note</p>
+                <p class="text-xs text-gray-600">
+                    Automated hematology analysis completed successfully.
+                </p>
+            </div>
+
+            <!-- File -->
+            <div class="mt-3">
+                <button class="px-3 py-2 text-xs bg-white border rounded-lg hover:bg-gray-100 transition">
+                    📄 Lab_Report.pdf
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+
+            <!-- Badge -->
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-medium border border-blue-100">
+                About Medical Pulse
+            </span>
+
+            <!-- Title -->
+            <h2 class="text-4xl font-semibold text-slate-900 leading-tight">
+                A smarter way to manage your healthcare journey
+            </h2>
+
+            <!-- Description -->
+            <p class="text-slate-500 text-base leading-relaxed max-w-3xl mx-auto">
+                Medical Pulse is a unified digital healthcare platform designed to simplify how patients interact with medical services.
+                It allows users to seamlessly reserve appointments across clinics, laboratories, radiology centers, and other healthcare providers — all in one place.
+            </p>
+
+            <p class="text-slate-500 text-base leading-relaxed max-w-3xl mx-auto">
+                Your personal medical profile is automatically updated after every visit, test, or medical service, ensuring a continuously evolving and accurate health record.
+                In addition, our intelligent AI system analyzes reports and medical data to deliver meaningful insights, helping you understand your health more clearly and proactively.
+            </p>
+
+            <!-- Feature highlights -->
+            <div class="grid md:grid-cols-3 gap-6 mt-10">
+
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 hover:shadow-md transition">
+                    <h3 class="font-semibold text-slate-900">Unified Appointments</h3>
+                    <p class="text-sm text-slate-500 mt-2">
+                        Book visits across clinics, labs, radiology, and specialists without switching platforms.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 hover:shadow-md transition">
+                    <h3 class="font-semibold text-slate-900">Dynamic Medical Profile</h3>
+                    <p class="text-sm text-slate-500 mt-2">
+                        Your health record updates automatically after every medical interaction.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 hover:shadow-md transition">
+                    <h3 class="font-semibold text-slate-900">AI Medical Insights</h3>
+                    <p class="text-sm text-slate-500 mt-2">
+                        Smart analysis of reports and results to help detect patterns and health risks early.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-24 bg-white">
+    
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    
+            <!-- LEFT TEXT -->
+            <div class="space-y-5">
+    
+                <!-- Badge -->
+                <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-medium border border-blue-100">
+                    About Medical Pulse
+                </span>
+    
+                <!-- Title -->
+                <h2 class="text-4xl font-semibold text-slate-900 leading-tight">
+                    Healthcare made simple, connected, and smart
+                </h2>
+    
+                <!-- Short Description -->
+                <p class="text-slate-500 leading-relaxed">
+                    A unified platform for booking medical services, managing your health profile, and getting AI-powered insights from your reports — all in one place.
+                </p>
+    
+                <!-- Features (compact) -->
+                <div class="space-y-3 pt-2">
+    
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-calendar-check text-blue-600 mt-1"></i>
+                        <p class="text-sm text-slate-600">
+                            Book appointments across clinics, labs, and radiology centers easily.
+                        </p>
+                    </div>
+    
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-id-card text-emerald-600 mt-1"></i>
+                        <p class="text-sm text-slate-600">
+                            Your medical profile updates automatically after every visit.
+                        </p>
+                    </div>
+    
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-brain text-violet-600 mt-1"></i>
+                        <p class="text-sm text-slate-600">
+                            AI analyzes your reports to detect risks early and give insights.
+                        </p>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <!-- RIGHT IMAGE -->
+            <div class="relative">
+    
+                <!-- background glow -->
+                <div class="absolute -top-10 -right-10 w-72 h-72 bg-blue-100/40 blur-3xl rounded-full"></div>
+    
+                <div class="relative rounded-3xl overflow-hidden shadow-xl border border-slate-100">
+    
+                    <img src="logo3.png" class="w-full h-full object-cover" alt="Medical dashboard" />
+    
+                    <!-- overlay card -->
+                   
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <section class="py-20 bg-slate-50">
+
+        <div class="max-w-6xl mx-auto px-4">
+
+            <!-- Header -->
+            <div class="text-center mb-12 space-y-2">
+                <h2 class="text-3xl font-semibold text-slate-900">Our Services</h2>
+                <p class="text-slate-500 text-sm">
+                    Everything you need to manage your healthcare in one platform
+                </p>
+            </div>
+
+            <!-- Cards -->
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <!-- 1. Appointments -->
+                <div class="group bg-white/70 backdrop-blur-xl border border-slate-100 rounded-2xl p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition">
+
+                    <div class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center mb-4">
+                        <i class="pi pi-calendar text-blue-600"></i>
+                    </div>
+
+                    <h3 class="font-semibold text-slate-900">Medical Appointments</h3>
+
+                    <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                        Easily reserve appointments with multiple medical service providers, clinics, and specialists in your area.
+                    </p>
+
+                    <div class="mt-4 text-xs text-blue-600 font-medium">
+                        Book doctors • Clinics • Hospitals
+                    </div>
+
+                </div>
+
+                <!-- 2. Medical Profile -->
+                <div class="group bg-white/70 backdrop-blur-xl border border-slate-100 rounded-2xl p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition">
+
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center mb-4">
+                        <i class="pi pi-user text-emerald-600"></i>
+                    </div>
+
+                    <h3 class="font-semibold text-slate-900">Your Medical Profile</h3>
+
+                    <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                        A complete digital medical profile containing your history, prescriptions, allergies, and past visits.
+                    </p>
+
+                    <div class="mt-4 text-xs text-emerald-600 font-medium">
+                        Secure • Centralized • Always available
+                    </div>
+
+                </div>
+
+                <!-- 3. AI Analysis -->
+                <div class="group bg-white/70 backdrop-blur-xl border border-slate-100 rounded-2xl p-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition">
+
+                    <div class="w-12 h-12 rounded-2xl bg-violet-50 flex items-center justify-center mb-4">
+                        <i class="pi pi-bolt text-violet-600"></i>
+                    </div>
+
+                    <h3 class="font-semibold text-slate-900">AI Health Analysis</h3>
+
+                    <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                        Smart AI-powered insights that analyze your medical data and help detect risks early with personalized suggestions.
+                    </p>
+
+                    <div class="mt-4 text-xs text-violet-600 font-medium">
+                        Predictive • Smart • Personalized
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="py-10 bg-slate-900 text-slate-400 text-center text-sm">
+        © 2026 Medical Pulse — All rights reserved.
+    </footer>
+
+</div>

@@ -5,10 +5,17 @@ import { LabResults } from './components/Patient/patient-dashboard/lab-results/l
 import { PatientInfo } from './components/Patient/patient-dashboard/patient-info/patient-info';
 import { Radiology } from './components/Patient/patient-dashboard/radiology/radiology';
 import { Visitis } from './components/Patient/patient-dashboard/visitis/visitis';
+import { Login } from './components/login/login';
+import { Home } from './components/home/home';
 export const routes: Routes = [
+  {path: 'home', component:Home},
+  {
+    path: "login",
+    component: Login,
+  },
   {
     path: '',
-    redirectTo: 'patient-dashboard',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
