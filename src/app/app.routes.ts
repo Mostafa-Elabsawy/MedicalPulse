@@ -7,10 +7,11 @@ import { Radiology } from './components/Patient/patient-dashboard/radiology/radi
 import { Visitis } from './components/Patient/patient-dashboard/visitis/visitis';
 import { Login } from './components/login/login';
 import { Home } from './components/home/home';
+import { Appointments } from './components/Patient/patient-dashboard/appointments/appointments';
 export const routes: Routes = [
-  {path: 'home', component:Home},
+  { path: 'home', component: Home },
   {
-    path: "login",
+    path: 'login',
     component: Login,
   },
   {
@@ -26,7 +27,7 @@ export const routes: Routes = [
     path: 'patient-dashboard',
     component: PatientDashboard,
     children: [
-      {path: '', redirectTo: 'Patient-Info', pathMatch: 'full'},
+      { path: '', redirectTo: 'Patient-Info', pathMatch: 'full' },
       {
         path: 'Patient-Info',
         component: PatientInfo,
@@ -42,6 +43,10 @@ export const routes: Routes = [
       {
         path: 'Visits',
         component: Visitis,
+      },
+      {
+        path: 'Appointments',
+        component: Appointments,
       },
     ],
   },
