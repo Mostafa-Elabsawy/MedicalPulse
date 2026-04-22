@@ -70,7 +70,7 @@
                             <h2 class="text-xl text-black font-semibold block text-center">Confirmation & Security </h2>
                         </div>
                         <patient-security-info (output)="UpdateData($event,securitydata,'security')"></patient-security-info>
-                           
+                        
                         <div class="flex pt-6 justify-between">
                             <p-button (onClick)="activateCallback(3)"  label="Back" severity="secondary" icon="pi pi-arrow-left" />
                             <p-button (onClick)="submitForm()" label="Complete Regsistration" [disabled]="validation() && !(personaldata().valid && contactdata().valid && medicaldata().valid && securitydata().valid)" severity="primary" icon="pi pi-check" iconPos="right" />

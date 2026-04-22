@@ -6,7 +6,7 @@ import { LabResults } from './lab-results/lab-results';
 
 @Component({
   selector: 'app-patient-dashboard',
-  imports: [RouterOutlet, PatientInfo, ButtonModule, LabResults, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, ButtonModule, RouterLink, RouterLinkActive],
   templateUrl: './patient-dashboard.html',
   styleUrl: './patient-dashboard.css',
 })
